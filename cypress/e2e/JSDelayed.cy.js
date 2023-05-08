@@ -20,7 +20,6 @@ it("Check login button",()=>{
 
 //Check the content of 2ed card on 2nd page
 it("Check content 5th card",()=>{
-    
     cy.get('.next > a').scrollIntoView().should('be.visible').click()
     cy.get('.quote').eq(1).scrollIntoView().should('be.visible')
     cy.get('.quote').find('.text').eq(1).should('contain.text','“It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.”')
@@ -37,15 +36,6 @@ it("Check the Previous/Next botton",()=>{
     cy.url().should('eq','http://quotes.toscrape.com/js-delayed/page/1/')  
     cy.get('.quote').find('.author').eq(3).should('contain.text','Jane Austen')
     })
-
-
-
-
-
-
-
-
-
 
     })
 

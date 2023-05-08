@@ -35,9 +35,7 @@ describe('API Test', () => {
         console.log(response)})
     })
 
-//Check 7th tags 
-    
-    
+//Check 7th tag    
     it("Check first-page",()=>{
         cy.request('http://quotes.toscrape.com/api/quotes')
         .then((response)=>{
